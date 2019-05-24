@@ -10,12 +10,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-int		main(void)
-{
-	char str[] = "portrait";
-	char ptr;
-
-	ptr = ft_strlen(str);
-	printf("%d", ptr);
-	return (0);
-}

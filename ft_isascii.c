@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 12:31:38 by nmaila            #+#    #+#             */
-/*   Updated: 2019/05/23 11:59:18 by nmaila           ###   ########.fr       */
+/*   Created: 2019/05/24 15:42:36 by nmaila            #+#    #+#             */
+/*   Updated: 2019/05/24 15:48:05 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** tests for an ASCII character, which is any character
+** between 0 and octal 0177 inclusive.
+*/
+
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+int	ft_isascii(int c)
 {
-	int		i;
-
-	i = 0;
-	while (src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (dst);
+	if (c >= 0 && c <= 127)
+		return (1);
+	else
+		return (0);
 }

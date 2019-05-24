@@ -6,25 +6,31 @@
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 12:30:20 by nmaila            #+#    #+#             */
-/*   Updated: 2019/05/21 14:05:16 by nmaila           ###   ########.fr       */
+/*   Updated: 2019/05/24 16:04:22 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcat(char *str1, const char *str2)
-{
-    int i;
-    int j;
+/*
+** appends a copy of the null-terminated string s2 to the end of the 
+**		null-terminated string s1.
+** The string s1 must have sufficient space to hold the result. 
+*/
 
-    i =0;
-    while (str1[i])
-        i++;
-    j = 0;
-    while (str2[j])
-    {
-        str1[i] = str2[j];
-        i++;
-        j++;
-    }
-    str1[i] = '\0';
-    return (str1);
+char	*ft_strcat(char *s1, const char *s2)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (s1[i])
+		i++;
+	j = 0;
+	while (s2[j])
+	{
+		s1[i] = s2[j];
+		i++;
+		j++;
+	}
+	s1[i] = '\0';
+	return (s1);
 }

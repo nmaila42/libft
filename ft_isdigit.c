@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 12:31:38 by nmaila            #+#    #+#             */
-/*   Updated: 2019/05/23 11:59:18 by nmaila           ###   ########.fr       */
+/*   Created: 2019/05/24 15:49:16 by nmaila            #+#    #+#             */
+/*   Updated: 2019/05/24 15:52:36 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** tests for a decimal digit character
+*/
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+int	ft_isdigit(int c)
 {
-	int		i;
-
-	i = 0;
-	while (src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (dst);
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }

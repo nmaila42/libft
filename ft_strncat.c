@@ -6,13 +6,20 @@
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 11:49:42 by nmaila            #+#    #+#             */
-/*   Updated: 2019/05/21 13:53:56 by nmaila           ###   ########.fr       */
+/*   Updated: 2019/05/23 10:39:12 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*
+ * appends a copy of the null-terminated string s2 to the end of the 
+		null-terminated string s1
+ * appends not more than n characters from s2, and then adds a
+		 terminating `\0'.
+*/
 
-char	*ft_strncat(char *s1, const char *s2, size_t c)
+#include "libft.h"
+
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	size_t i;
 	size_t j;
@@ -23,7 +30,7 @@ char	*ft_strncat(char *s1, const char *s2, size_t c)
 		i++;
 	}
 	j = 0;
-	while (s2[j] && j < c)
+	while (s2[j] && j < n)
 	{
 		s1[i] = s2[j];
 		i++;
