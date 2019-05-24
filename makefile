@@ -8,8 +8,7 @@ OBJ = *.o
 
 run:
 	$(CC) $(FLAGS) $(C) $(SRC)
-	$(AR) $(NAME) $(OBJ)
-	ranlib $(NAME)	
+	$(AR) $(NAME) $(OBJ)	
 
 clean:	
 	rm *.o
