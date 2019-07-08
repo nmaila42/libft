@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 15:04:43 by nmaila            #+#    #+#             */
-/*   Updated: 2019/05/24 15:42:11 by nmaila           ###   ########.fr       */
+/*   Created: 2019/05/30 10:39:22 by nmaila            #+#    #+#             */
+/*   Updated: 2019/06/01 13:17:06 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,3 @@ int		ft_isalnum(int c)
 	else
 		return (0);
 }
-/*
-** tests for any character for which isalpha(3) or isdigit(3) is true
-*/

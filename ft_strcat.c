@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/30 11:49:08 by nmaila            #+#    #+#             */
-/*   Updated: 2019/06/25 15:52:27 by nmaila           ###   ########.fr       */
+/*   Created: 2019/06/01 13:15:35 by nmaila            #+#    #+#             */
+/*   Updated: 2019/06/18 11:29:16 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *str1, const char *str2, size_t n)
+char	*ft_strcat(char *dst, const char *src)
 {
-	size_t	i;
+	int		j;
+	int		i;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (str1[i] != '\0' && str1[i] == str2[i] && i < n - 1)
+	j = 0;
+	while (dst[i] != '\0')
+	{
 		i++;
-	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+	}
+	while (src[j] != '\0')
+	{
+		dst[i] = src[j];
+		j++;
+		i++;
+	}
+	dst[i] = '\0';
+	return (dst);
 }

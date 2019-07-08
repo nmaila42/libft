@@ -5,18 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/24 15:57:12 by nmaila            #+#    #+#             */
-/*   Updated: 2019/05/24 15:59:18 by nmaila           ###   ########.fr       */
+/*   Created: 2019/05/30 11:00:21 by nmaila            #+#    #+#             */
+/*   Updated: 2019/05/30 11:02:42 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-** function tests for any printable character
-*/
-
-int	ft_isprint(int c)
+int		ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

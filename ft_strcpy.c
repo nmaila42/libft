@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 12:31:38 by nmaila            #+#    #+#             */
-/*   Updated: 2019/05/23 11:59:18 by nmaila           ###   ########.fr       */
+/*   Created: 2019/05/30 11:30:32 by nmaila            #+#    #+#             */
+/*   Updated: 2019/06/18 07:59:56 by nmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+char		*ft_strcpy(char *dst, const char *src)
 {
 	int		i;
 
